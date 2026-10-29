@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Duo - Apple</title>
+  <meta name="description" content="Discover the all-new iPhone Duo. Foldable titanium design, dual Super Retina XDR displays, A19 Pro chip, and Apple Intelligence.">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Preconnect to Google Fonts for Inter substitute -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================= -->
+  <!-- Global Store Navigation (44px) -->
+  <!-- ========================================================================= -->
+  <nav class="global-nav" id="global-nav" aria-label="Global Store Navigation">
+    <div class="global-nav-container">
+      <!-- Apple Logo -->
+      <a href="#" class="global-nav-link apple-logo-icon" aria-label="Apple">
+        <svg viewBox="0 0 17 21" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.22 17.65c-.83 1.21-1.7 2.4-3.03 2.42-1.32.03-1.75-.78-3.26-.78-1.52 0-1.99.76-3.26.81-1.3.05-2.29-1.3-3.13-2.51C.8 15.01-.5 10.38.83 8.07c.66-1.15 1.84-1.87 3.12-1.89 1.29-.02 2.5.87 3.28.87.79 0 2.27-1.07 3.84-.91.66.03 2.51.27 3.7 2.01-.1.06-2.21 1.29-2.18 3.83.03 3.05 2.67 4.07 2.7 4.09-.03.07-.42 1.45-1.37 2.58zM11.69 4.31c.64-.78 1.08-1.86.96-2.95-.93.04-2.06.62-2.72 1.4-.58.67-1.09 1.76-.95 2.82 1.04.08 2.07-.49 2.71-1.27z"/>
+        </svg>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="global-nav-links-desktop" style="display: flex; align-items: center;">
+        <a href="#store" class="global-nav-link">Store</a>
+        <a href="#mac" class="global-nav-link">Mac</a>
+        <a href="#ipad" class="global-nav-link">iPad</a>
+        <a href="#iphone" class="global-nav-link" style="color: #000; font-weight: 500;">iPhone</a>
+        <a href="#watch" class="global-nav-link">Watch</a>
+        <a href="#vision" class="global-nav-link">Vision</a>
+        <a href="#airpods" class="global-nav-link">AirPods</a>
+        <a href="#tv-home" class="global-nav-link">TV &amp; Home</a>
+        <a href="#entertainment" class="global-nav-link">Entertainment</a>
+        <a href="#accessories" class="global-nav-link">Accessories</a>
+        <a href="#support" class="global-nav-link">Support</a>
+      </div>
+
+      <!-- Utility Icons (Search & Bag) -->
+      <div style="display: flex; align-items: center;">
+        <!-- Search Button -->
+        <button class="global-nav-icon-btn" id="search-toggle-btn" aria-label="Search apple.com">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.7 14.3l-3.8-3.8c.9-1.2 1.5-2.6 1.5-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.6 4.2-1.5l3.8 3.8c.4.4 1 .4 1.4 0 .3-.4.3-1-.1-1.3zM6.4 11.3c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/>
+          </svg>
+        </button>
+
+        <!-- Bag Button -->
+        <button class="global-nav-icon-btn" id="bag-toggle-btn" aria-label="Shopping Bag">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.5 4h-1.6C10.7 2.3 9.4 1 7.8 1S4.9 2.3 4.7 4H3.1C2 4 1.1 4.9 1 6l.8 8.1c.1 1.1 1 1.9 2.1 1.9h7.8c1.1 0 2-.8 2.1-1.9L14.6 6c-.1-1.1-1-2-2.1-2zM7.8 2.3c.9 0 1.7.9 1.9 2.1H5.9c.2-1.2 1-2.1 1.9-2.1zm5.4 11.6c-.1.4-.4.7-.8.7H4.6c-.4 0-.7-.3-.8-.7L3 6.3c0-.4.3-.7.7-.7h1.4v1.6c0 .4.3.7.7.7s.7-.3.7-.7V5.6h3v1.6c0 .4.3.7.7.7s.7-.3.7-.7V5.6h1.4c.4 0 .7.3.7.7l-.8 7.6z"/>
+          </svg>
+          <span class="bag-badge" id="global-bag-badge">0</span>
+        </button>
+
+        <!-- Mobile Nav Menu Toggle -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+            <path d="M2 4h14v1.5H2zm0 4.5h14V10H2zm0 4.5h14v1.5H2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Paper Frost Search Tray (Opened Global Navigation Layer) -->
+    <div class="global-search-tray" id="global-search-tray">
+      <div class="search-input-wrapper">
+        <svg viewBox="0 0 16 16"><path d="M15.7 14.3l-3.8-3.8c.9-1.2 1.5-2.6 1.5-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.6 4.2-1.5l3.8 3.8c.4.4 1 .4 1.4 0 .3-.4.3-1-.1-1.3zM6.4 11.3c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/></svg>
+        <input type="text" class="search-input-field" id="global-search-input" placeholder="Search apple.com" autocomplete="off">
+      </div>
+      <div class="search-quick-links">
+        <div class="search-quick-title">Quick Links</div>
+        <ul class="search-quick-list">
+          <li><a href="#buy" class="trigger-buy-drawer">→ Order iPhone Duo</a></li>
+          <li><a href="#design">→ Titanium Hinge Architecture</a></li>
+          <li><a href="#display">→ Dual Super Retina XDR Canvas</a></li>
+          <li><a href="#specs">→ Compare iPhone Models</a></li>
+          <li><a href="#tradein">→ Apple Trade In Program</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Shopping Bag Dropdown Tray -->
+    <div class="bag-dropdown-tray" id="bag-dropdown-tray">
+      <div id="bag-preview-list">
+        <div class="bag-empty-notice">Your Bag is empty.</div>
+      </div>
+      <ul class="bag-quick-nav">
+        <li><a href="#bag">Review Bag <span id="bag-item-count"></span></a></li>
+        <li><a href="#favorites">Saved Items</a></li>
+        <li><a href="#orders">Orders</a></li>
+        <li><a href="#account">Account &amp; Settings</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========================================================================= -->
+  <!-- Product Local Navigation (Sticky Bar) -->
+  <!-- ========================================================================= -->
+  <div class="product-local-nav" id="product-local-nav">
+    <div class="product-nav-container">
+      <a href="#hero" class="product-nav-title">iPhone Duo</a>
+      
+      <div class="product-nav-controls">
+        <ul class="product-nav-anchors">
+          <li><a href="#hero" class="active">Overview</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#display">Display</a></li>
+          <li><a href="#performance">A19 Pro</a></li>
+          <li><a href="#camera">Camera</a></li>
+          <li><a href="#specs">Tech Specs</a></li>
+        </ul>
+        
+        <!-- Outlined Explore Pill -->
+        <a href="#specs" class="btn-explore-pill">Explore</a>
+        
+        <!-- Pricing Blue Pill -->
+        <a href="#buy" class="btn-pricing-blue-pill trigger-buy-drawer">Buy</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- Hero Product Stage (Gallery White #ffffff) -->
+  <!-- ========================================================================= -->
+  <section class="hero-stage" id="hero">
+    <div class="container">
+      <div class="hero-meta">
+        <!-- Launch status label: bare #b64400 12px text -->
+        <span class="launch-status-label">New</span>
+        <h2 class="product-kicker">iPhone Duo</h2>
+      </div>
+
+      <!-- Display Statement: 80px/600, 84px line height, -1.2px tracking -->
+      <h1 class="hero-headline">Fold. Unfold. Behold.</h1>
+      
+      <p class="hero-subhead">
+        Dual Super Retina XDR displays. Grade 5 titanium hinge. A19 Pro with Apple Intelligence.<br>
+        Available starting November 8. Pre-order starts Friday at 5:00 a.m. PT.
+      </p>
+
+      <div class="hero-cta-links">
+        <a href="#film" class="link-apple-blue" id="watch-film-link">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" style="display:inline-block; margin-right:4px;">
+            <circle cx="8" cy="8" r="7.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <polygon points="6.5,5 11,8 6.5,11" fill="currentColor"/>
+          </svg>
+          Watch the film
+        </a>
+        <a href="#event" class="link-apple-blue">Watch the event &gt;</a>
+      </div>
+
+      <!-- Center Product Render (No containing card) -->
+      <div class="hero-media-wrapper">
+        <img 
+          src="assets/hero_iphone_fold.jpg" 
+          alt="Apple iPhone Duo in Natural Titanium unfolded on white gallery table" 
+          class="hero-main-render" 
+          id="hero-product-img"
+          loading="eager"
+          fetchpriority="high"
+        >
+
+        <!-- Floating Pricing Callout (Shadowless 28px capsule with hairline edge) -->
+        <div class="floating-pricing-capsule">
+          <div class="capsule-text">
+            <div class="capsule-price">From $1,399 or $58.29/mo. for 24 mo.*</div>
+            <div class="capsule-subtext">Apple Card 0% APR or get $180-$650 trade-in credit</div>
+          </div>
+          <button class="btn-pricing-blue-pill trigger-buy-drawer">Buy</button>
+        </div>
+      </div>
+
+      <!-- Interactive Finish Selector Bar -->
+      <div class="finish-selector-bar">
+        <div class="finish-label">
+          Finish: <strong id="active-finish-name">Natural Titanium</strong>
+        </div>
+        <div class="swatches-row" role="radiogroup" aria-label="Titanium Finish Selection">
+          <button class="swatch-btn swatch-natural active" data-finish="natural" title="Natural Titanium" aria-label="Natural Titanium"></button>
+          <button class="swatch-btn swatch-white" data-finish="white" title="White Titanium" aria-label="White Titanium"></button>
+          <button class="swatch-btn swatch-black" data-finish="black" title="Black Titanium" aria-label="Black Titanium"></button>
+          <button class="swatch-btn swatch-desert" data-finish="desert" title="Desert Titanium" aria-label="Desert Titanium"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- Section Anchor Navigation -->
+  <!-- ========================================================================= -->
+  <nav class="section-anchor-nav" aria-label="In-page feature navigation">
+    <div class="container-wide">
+      <ul class="anchor-list">
+        <li><a href="#highlights" class="active">Highlights</a></li>
+        <li><a href="#design">Titanium Hinge</a></li>
+        <li><a href="#display">Dual Display</a></li>
+        <li><a href="#performance">A19 Pro</a></li>
+        <li><a href="#camera">Pro Camera</a></li>
+        <li><a href="#specs">Compare Specs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========================================================================= -->
+  <!-- Highlights Stage (Studio Mist #f5f5f7) -->
+  <!-- ========================================================================= -->
+  <section class="highlights-section" id="highlights">
+    <div class="container-wide">
+      <div class="highlights-header">
+        <h2 class="highlights-heading">Get the highlights.</h2>
+        <a href="#highlights-film" class="link-apple-blue" style="font-size: var(--text-feature-copy);">
+          Watch the film 
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" style="display:inline-block; margin-left:4px;">
+            <path d="M5.5 3l5 5-5 5"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Carousel Track -->
+      <div class="carousel-container">
+        <div class="carousel-viewport" id="carousel-viewport">
+          
+          <!-- Card 1: Dual Display -->
+          <div class="feature-media-card" data-card-index="0">
+            <div class="card-top-content">
+              <span class="card-kicker">Display</span>
+              <h3 class="card-feature-statement large">
+                Dual Super Retina XDR.<br>
+                Pocket to vast in one motion.
+              </h3>
+            </div>
+            <div class="card-media-center">
+              <img src="assets/display_multitask.jpg" alt="Unfolded iPhone Duo 7.9-inch internal OLED canvas with iOS multitasking" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Card 2: Titanium Hinge -->
+          <div class="feature-media-card" data-card-index="1">
+            <div class="card-top-content">
+              <span class="card-kicker">Craftsmanship</span>
+              <h3 class="card-feature-statement large">
+                Grade 5 Titanium Hinge.<br>
+                Engineered with zero crease.
+              </h3>
+            </div>
+            <div class="card-media-center">
+              <img src="assets/hinge_detail.jpg" alt="Macro precision titanium hinge mechanism with micro gears" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Card 3: A19 Pro -->
+          <div class="feature-media-card" data-card-index="2">
+            <div class="card-top-content">
+              <span class="card-kicker">Apple Silicon</span>
+              <h3 class="card-feature-statement large">
+                A19 Pro Bionic.<br>
+                Profound Apple Intelligence.
+              </h3>
+            </div>
+            <div class="card-media-center">
+              <img src="assets/chip_a19pro.jpg" alt="Apple A19 Pro Bionic chip with glowing 3nm neural engine traces" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Card 4: Pro Camera System -->
+          <div class="feature-media-card" data-card-index="3">
+            <div class="card-top-content">
+              <span class="card-kicker">Pro Photography</span>
+              <h3 class="card-feature-statement large">
+                48MP Fusion Camera.<br>
+                5x tetraprism optical zoom.
+              </h3>
+            </div>
+            <div class="card-media-center">
+              <img src="assets/camera_module.jpg" alt="Triple sapphire crystal camera lenses with titanium rings" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Card 5: Finishes -->
+          <div class="feature-media-card" data-card-index="4">
+            <div class="card-top-content">
+              <span class="card-kicker">Finishes</span>
+              <h3 class="card-feature-statement large">
+                Four lustrous shades.<br>
+                Forged from spacecraft alloy.
+              </h3>
+            </div>
+            <div class="card-media-center">
+              <img src="assets/colors_lineup.jpg" alt="Four titanium finishes of iPhone Duo standing in elegant lineup" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Playback Control Pill -->
+        <div class="carousel-controls-wrapper">
+          <div class="carousel-playback-track">
+            <!-- Nav Prev -->
+            <button class="carousel-nav-btn" id="carousel-prev" aria-label="Previous highlight slide">
+              <svg viewBox="0 0 16 16"><path d="M10.5 3l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </button>
+
+            <!-- Slide Dots -->
+            <div class="carousel-dots" id="carousel-dots-container">
+              <button class="carousel-dot active" data-index="0" aria-label="Go to slide 1"></button>
+              <button class="carousel-dot" data-index="1" aria-label="Go to slide 2"></button>
+              <button class="carousel-dot" data-index="2" aria-label="Go to slide 3"></button>
+              <button class="carousel-dot" data-index="3" aria-label="Go to slide 4"></button>
+              <button class="carousel-dot" data-index="4" aria-label="Go to slide 5"></button>
+            </div>
+
+            <!-- Nav Next -->
+            <button class="carousel-nav-btn" id="carousel-next" aria-label="Next highlight slide">
+              <svg viewBox="0 0 16 16"><path d="M5.5 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </button>
+
+            <!-- Play/Pause -->
+            <button class="carousel-nav-btn" id="carousel-play-pause" aria-label="Pause carousel slideshow">
+              <svg viewBox="0 0 16 16"><path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- Editorial Feature Chapter 1: Titanium Hinge (White Gallery #ffffff) -->
+  <!-- ========================================================================= -->
+  <section class="editorial-section" id="design">
+    <div class="container">
+      <div class="editorial-grid">
+        <div class="editorial-text-col">
+          <span class="editorial-kicker">Aerospace Precision</span>
+          <h2 class="editorial-headline">
+            Folded to perfection.<br>
+            Hinge re-engineered from the atom up.
+          </h2>
+          <p class="editorial-body">
+            To create a foldable iPhone worthy of the name, our engineers crafted a revolutionary dual-synchronized gear mechanism in Grade 5 titanium. Four interlocking micro-pinions guide the ultra-thin flexible glass into an optimized teardrop profile, eliminating screen creases completely.
+          </p>
+          <p class="editorial-body">
+            When closed, both halves sit completely flush with zero gap. When opened, high-tensile locking detents hold the canvas perfectly flat at 180 degrees — or anywhere in between with fluid flex mode.
+          </p>
+
+          <!-- Interactive Fold Angle Demo Widget -->
+          <div class="fold-interactive-widget">
+            <div class="fold-widget-title">
+              <span>Interactive Hinge Angle:</span>
+              <strong id="fold-angle-value">135°</strong>
+            </div>
+            <input type="range" min="0" max="180" value="135" class="fold-slider-input" id="fold-angle-slider" aria-label="Hinge fold angle slider">
+            <div class="fold-slider-ticks">
+              <span>0° (Closed)</span>
+              <span>90° (Flex Stand)</span>
+              <span>180° (Canvas)</span>
+            </div>
+            <div style="margin-top: 12px; font-size: var(--text-global-nav); color: var(--color-ink);">
+              Current state: <strong id="fold-mode-value">Studio Angle (Ergonomic Reading)</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="editorial-media-col">
+          <div class="editorial-media-frame">
+            <img src="assets/hinge_detail.jpg" alt="Apple titanium hinge mechanism detail" id="fold-animated-render" style="transition: transform 0.3s ease;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- Editorial Feature Chapter 2: Display & Multitasking (Reversed Grid) -->
+  <!-- ========================================================================= -->
+  <section class="editorial-section" id="display">
+    <div class="container">
+      <div class="editorial-grid reversed">
+        <div class="editorial-text-col">
+          <span class="editorial-kicker">Dual Super Retina XDR</span>
+          <h2 class="editorial-headline">
+            Two screens.<br>
+            Zero compromises.
+          </h2>
+          <p class="editorial-body">
+            On the outside: a sharp, edge-to-edge 6.3-inch OLED cover display with Dynamic Island, Ceramic Shield 2, and Always-On display for rapid one-handed navigation.
+          </p>
+          <p class="editorial-body">
+            Unfold to reveal an expansive 7.9-inch flexible OLED canvas. Powered by ProMotion technology adaptive from 1Hz to 120Hz, reaching 3,000 nits outdoor peak brightness with anti-reflective nano-texture coating.
+          </p>
+
+          <!-- Interactive Multitasking Tabs -->
+          <div class="multitask-tabs">
+            <button class="multitask-tab-btn active" data-mode="creative">Creative Studio</button>
+            <button class="multitask-tab-btn" data-mode="productivity">Split Productivity</button>
+            <button class="multitask-tab-btn" data-mode="intelligence">Apple Intelligence</button>
+          </div>
+          <div style="margin-top: 12px; font-size: var(--text-body-small); color: var(--color-slate); min-height: 48px;" id="multitask-description">
+            Run Final Cut Pro on the top half while monitoring color grades and notes on the lower canvas with zero lag.
+          </div>
+        </div>
+
+        <div class="editorial-media-col">
+          <div class="editorial-media-frame">
+            <img src="assets/display_multitask.jpg" alt="iPhone Duo unfolded showing multitasking in iOS 19">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- Editorial Feature Chapter 3: A19 Pro Silicon & Apple Intelligence -->
+  <!-- ========================================================================= -->
+  <section class="editorial-section" id="performance">
+    <div class="container">
+      <div class="editorial-grid">
+        <div class="editorial-text-col">
+          <span class="editorial-kicker">Apple Silicon</span>
+          <h2 class="editorial-headline">
+            A19 Pro Bionic.<br>
+            Silicon designed for dual-screen power.
+          </h2>
+          <p class="editorial-body">
+            Built on second-generation 3-nanometer architecture, the A19 Pro features a 6-core CPU with 2 performance cores and 4 efficiency cores, a 6-core pro GPU with hardware-accelerated ray tracing, and a 16-core Neural Engine processing 40 trillion operations per second.
+          </p>
+          <p class="editorial-body">
+            Apple Intelligence runs privately on device: summarize long document threads, rewrite emails in your chosen tone, clean up photobombers with one tap, or ask Siri to navigate across both open apps simultaneously.
+          </p>
+          <div style="margin-top: 20px;">
+            <a href="#intelligence-details" class="link-apple-blue">Explore Apple Intelligence privacy protections &gt;</a>
+          </div>
+        </div>
+
+        <div class="editorial-media-col">
+          <div class="editorial-media-frame">
+            <img src="assets/chip_a19pro.jpg" alt="Apple A19 Pro Bionic chip render">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- Editorial Feature Chapter 4: Pro Fusion Camera System (Reversed Grid) -->
+  <!-- ========================================================================= -->
+  <section class="editorial-section" id="camera">
+    <div class="container">
+      <div class="editorial-grid reversed">
+        <div class="editorial-text-col">
+          <span class="editorial-kicker">Pro Camera System</span>
+          <h2 class="editorial-headline">
+            48MP across every dimension.<br>
+            Flex mode changes how you shoot.
+          </h2>
+          <p class="editorial-body">
+            A triple fusion optical system engineered directly into a slim folding profile. With the unique hinge design, you can set iPhone Duo on any flat surface in flex mode for shake-free astrophotography, hands-free group selfies using the main 48MP sensor, or overhead desk shots.
+          </p>
+          
+          <!-- Interactive Focal Length Bar -->
+          <div class="camera-lens-bar">
+            <button class="lens-tab-pill" data-focal="0.5x">0.5x Macro</button>
+            <button class="lens-tab-pill active" data-focal="1x">1x Fusion 48MP</button>
+            <button class="lens-tab-pill" data-focal="5x">5x Telephoto</button>
+          </div>
+          <div style="margin-top: 14px; font-size: var(--text-body-small); color: var(--color-slate); min-height: 48px;" id="camera-lens-desc">
+            24mm Fusion: 48MP quad-pixel sensor with f/1.78 aperture and second-generation sensor-shift optical image stabilization.
+          </div>
+        </div>
+
+        <div class="editorial-media-col">
+          <div class="editorial-media-frame">
+            <img src="assets/camera_module.jpg" alt="iPhone Duo triple camera module in titanium ring">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- Tech Specs Comparison Grid -->
+  <!-- ========================================================================= -->
+  <section class="specs-section" id="specs">
+    <div class="container">
+      <div class="specs-header">
+        <span class="launch-status-label" style="text-align: center;">Compare</span>
+        <h2 class="specs-heading">Which iPhone is right for you?</h2>
+        <p style="font-size: var(--text-body); color: var(--color-slate);">
+          Compare flagship capabilities across our most advanced lineup.
+        </p>
+      </div>
+
+      <div class="specs-table-wrapper">
+        <table class="specs-table">
+          <thead>
+            <tr>
+              <th class="specs-col-label">Feature</th>
+              <th class="specs-col-model highlight" style="color: var(--color-apple-blue);">iPhone Duo (New)</th>
+              <th class="specs-col-model">iPhone 16 Pro Max</th>
+              <th class="specs-col-model">iPhone 16</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="specs-col-label">Display</td>
+              <td class="specs-col-model highlight">
+                <strong>7.9″ Internal + 6.3″ Cover</strong><br>
+                Dual Super Retina XDR OLED<br>
+                ProMotion 1–120Hz · 3,000 nits
+              </td>
+              <td class="specs-col-model">
+                <strong>6.9″ Display</strong><br>
+                Super Retina XDR OLED<br>
+                ProMotion 1–120Hz · 2,000 nits
+              </td>
+              <td class="specs-col-model">
+                <strong>6.1″ Display</strong><br>
+                Super Retina XDR OLED<br>
+                60Hz · 2,000 nits
+              </td>
+            </tr>
+            <tr>
+              <td class="specs-col-label">Materials</td>
+              <td class="specs-col-model highlight">
+                Grade 5 Titanium &amp; Fluidic Gear Hinge<br>
+                Ceramic Shield 2
+              </td>
+              <td class="specs-col-model">
+                Grade 5 Titanium<br>
+                Ceramic Shield
+              </td>
+              <td class="specs-col-model">
+                Aerospace-grade Aluminum<br>
+                Color-infused glass
+              </td>
+            </tr>
+            <tr>
+              <td class="specs-col-label">Processor</td>
+              <td class="specs-col-model highlight">
+                <strong>A19 Pro Bionic</strong><br>
+                16-core Neural Engine
+              </td>
+              <td class="specs-col-model">
+                <strong>A18 Pro</strong><br>
+                16-core Neural Engine
+              </td>
+              <td class="specs-col-model">
+                <strong>A18</strong><br>
+                16-core Neural Engine
+              </td>
+            </tr>
+            <tr>
+              <td class="specs-col-label">Camera</td>
+              <td class="specs-col-model highlight">
+                48MP Fusion + 48MP Ultra Wide<br>
+                5x Tetraprism Telephoto<br>
+                Flex Mode tripod shooting
+              </td>
+              <td class="specs-col-model">
+                48MP Fusion + 48MP Ultra Wide<br>
+                5x Optical Telephoto
+              </td>
+              <td class="specs-col-model">
+                48MP Fusion + 12MP Ultra Wide<br>
+                2x Optical Telephoto
+              </td>
+            </tr>
+            <tr>
+              <td class="specs-col-label">Apple Intelligence</td>
+              <td class="specs-col-model highlight">Integrated in iOS 19</td>
+              <td class="specs-col-model">Integrated in iOS 18</td>
+              <td class="specs-col-model">Integrated in iOS 18</td>
+            </tr>
+            <tr>
+              <td class="specs-col-label">Battery Life</td>
+              <td class="specs-col-model highlight">Up to 29 hrs video playback</td>
+              <td class="specs-col-model">Up to 33 hrs video playback</td>
+              <td class="specs-col-model">Up to 22 hrs video playback</td>
+            </tr>
+            <tr>
+              <td class="specs-col-label">Starting Price</td>
+              <td class="specs-col-model highlight">
+                <strong>From $1,399</strong><br>
+                <button class="btn-pricing-blue-pill trigger-buy-drawer" style="margin-top: 8px;">Buy</button>
+              </td>
+              <td class="specs-col-model">
+                From $1,199<br>
+                <a href="#buy-16promax" class="btn-explore-pill" style="margin-top: 8px;">Buy</a>
+              </td>
+              <td class="specs-col-model">
+                From $799<br>
+                <a href="#buy-16" class="btn-explore-pill" style="margin-top: 8px;">Buy</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- Interactive Pre-order / Buy Drawer (Modal Overlay) -->
+  <!-- ========================================================================= -->
+  <div class="buy-modal-overlay" id="buy-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="drawer-title-heading">
+    <div class="buy-drawer">
+      <div class="drawer-header">
+        <h2 class="drawer-title" id="drawer-title-heading">Buy iPhone Duo</h2>
+        <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close configuration drawer">✕</button>
+      </div>
+
+      <!-- Step 1: Finish -->
+      <div class="drawer-step">
+        <div class="drawer-step-title">1. Choose your finish.</div>
+        <div class="drawer-options-grid">
+          <div class="drawer-option-card drawer-finish-card selected" data-finish="Natural Titanium">
+            <div class="drawer-option-name">Natural Titanium</div>
+            <div class="drawer-option-sub">Classic aerospace luster</div>
+          </div>
+          <div class="drawer-option-card drawer-finish-card" data-finish="White Titanium">
+            <div class="drawer-option-name">White Titanium</div>
+            <div class="drawer-option-sub">Brilliant silver tone</div>
+          </div>
+          <div class="drawer-option-card drawer-finish-card" data-finish="Black Titanium">
+            <div class="drawer-option-name">Black Titanium</div>
+            <div class="drawer-option-sub">Deep stealth finish</div>
+          </div>
+          <div class="drawer-option-card drawer-finish-card" data-finish="Desert Titanium">
+            <div class="drawer-option-name">Desert Titanium</div>
+            <div class="drawer-option-sub">Warm golden undertone</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Storage -->
+      <div class="drawer-step">
+        <div class="drawer-step-title">2. Choose your capacity.</div>
+        <div class="drawer-options-grid">
+          <div class="drawer-option-card drawer-storage-card selected" data-price="1399">
+            <div class="drawer-option-name">256GB</div>
+            <div class="drawer-option-sub">From $1,399</div>
+          </div>
+          <div class="drawer-option-card drawer-storage-card" data-price="1599">
+            <div class="drawer-option-name">512GB</div>
+            <div class="drawer-option-sub">From $1,599</div>
+          </div>
+          <div class="drawer-option-card drawer-storage-card" data-price="1799" style="grid-column: span 2;">
+            <div class="drawer-option-name">1TB (Pro Storage)</div>
+            <div class="drawer-option-sub">From $1,799 · Ideal for ProRes video</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3: Apple Trade In -->
+      <div class="drawer-step">
+        <div class="drawer-step-title">3. Apple Trade In.</div>
+        <div class="drawer-options-grid">
+          <div class="drawer-option-card drawer-trade-card selected" data-discount="0">
+            <div class="drawer-option-name">No trade-in</div>
+            <div class="drawer-option-sub">Keep existing device</div>
+          </div>
+          <div class="drawer-option-card drawer-trade-card" data-discount="450">
+            <div class="drawer-option-name">Trade in iPhone</div>
+            <div class="drawer-option-sub">Save up to $650 instantly</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drawer Summary & Add to Bag -->
+      <div class="drawer-summary-card">
+        <div class="summary-total-row">
+          <div>
+            <div class="summary-total-label">Total Due Today</div>
+            <div style="font-size: var(--text-global-nav); color: var(--color-slate);" id="drawer-monthly-price">or $58.29/mo. for 24 mo.*</div>
+          </div>
+          <div class="summary-total-price" id="drawer-total-price">$1,399</div>
+        </div>
+        <button class="btn-add-to-bag" id="add-to-bag-btn">Add to Bag</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- Apple Global Footer -->
+  <!-- ========================================================================= -->
+  <footer class="apple-footer" id="footer" aria-label="Apple Footer">
+    <div class="container-wide">
+      <!-- Legal Footnotes -->
+      <ol class="footer-footnotes">
+        <li>Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made.</li>
+        <li>Apple Intelligence is available in beta on all iPhone Duo, iPhone 16 models, and iPhone 15 Pro with Siri and device language set to U.S. English, as part of an iOS update. Some features, additional languages, and platforms will be coming over the course of the next year.</li>
+        <li>Battery life claims depend on network configuration, usage, cellular signal strength, settings, and many other factors; actual results will vary. Battery has limited recharge cycles and may eventually need to be replaced.</li>
+        <li>The displays have rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the outer screen is 6.27 inches diagonally and the inner screen is 7.92 inches diagonally. Actual viewable area is less.</li>
+        <li>iPhone Duo is splash, water, and dust resistant and was tested under controlled laboratory conditions with a rating of IP68 under IEC standard 60529 (maximum depth of 6 meters up to 30 minutes). Splash, water, and dust resistance are not permanent conditions and resistance might decrease as a result of normal wear.</li>
+      </ol>
+
+      <!-- Apple Directory Grid -->
+      <div class="footer-directory-grid">
+        <div class="footer-col">
+          <div class="footer-col-title">Shop and Learn</div>
+          <ul class="footer-links-list">
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">AirPods</a></li>
+            <li><a href="#">TV &amp; Home</a></li>
+            <li><a href="#">AirTag</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Apple Wallet</div>
+          <ul class="footer-links-list">
+            <li><a href="#">Wallet</a></li>
+            <li><a href="#">Apple Card</a></li>
+            <li><a href="#">Apple Pay</a></li>
+            <li><a href="#">Apple Cash</a></li>
+          </ul>
+          <div class="footer-col-title" style="margin-top: 24px;">Account</div>
+          <ul class="footer-links-list">
+            <li><a href="#">Manage Your Apple ID</a></li>
+            <li><a href="#">Apple Store Account</a></li>
+            <li><a href="#">iCloud.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Entertainment</div>
+          <ul class="footer-links-list">
+            <li><a href="#">Apple TV+</a></li>
+            <li><a href="#">Apple Music</a></li>
+            <li><a href="#">Apple Arcade</a></li>
+            <li><a href="#">Apple Fitness+</a></li>
+            <li><a href="#">Apple News+</a></li>
+            <li><a href="#">Apple Podcasts</a></li>
+            <li><a href="#">Apple Books</a></li>
+            <li><a href="#">App Store</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Apple Store</div>
+          <ul class="footer-links-list">
+            <li><a href="#">Find a Store</a></li>
+            <li><a href="#">Genius Bar</a></li>
+            <li><a href="#">Today at Apple</a></li>
+            <li><a href="#">Group Reservations</a></li>
+            <li><a href="#">Apple Camp</a></li>
+            <li><a href="#">Apple Trade In</a></li>
+            <li><a href="#">Financing</a></li>
+            <li><a href="#">Carrier Deals at Apple</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shopping Help</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">About Apple</div>
+          <ul class="footer-links-list">
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Apple Leadership</a></li>
+            <li><a href="#">Career Opportunities</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Ethics &amp; Compliance</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact Apple</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>Copyright &copy; 2026 Apple Inc. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales Policy</a>
+          <a href="#">Legal</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div>United States</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
