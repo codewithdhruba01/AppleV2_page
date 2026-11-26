@@ -1,4 +1,4 @@
-# Apple — Style Reference
+# Apple Style Reference
 > foldable device in a white gallery. Center product renders as the visual event, with typography and blue controls kept deliberately quiet around it.
 
 **Theme:** light
@@ -23,7 +23,7 @@ Apple treats the product page as a white gallery: enormous product photography o
 | Pricing Blue | `#0071e3` | `--color-pricing-blue` | Filled pricing and learn-more controls — the brighter blue reserves visual urgency for compact conversion moments |
 | Launch Orange | `#b64400` | `--color-launch-orange` | Small launch-status labels such as new-product markers |
 
-## Tokens — Typography
+## Tokens Typography
 
 ### SF Pro Display — Product names, display headlines, large feature statements, and section-level product claims. The 80px/600 hero treatment tightens to -1.2px, making the largest type feel compact rather than promotional. · `--font-sf-pro-display`
 - **Substitute:** Inter, Helvetica Neue, Arial
@@ -64,7 +64,7 @@ Apple treats the product page as a white gallery: enormous product photography o
 | feature-heading | SF Pro Display | 600 | 40px | 1 | 0px | `--text-feature-heading` |
 | hero-display | SF Pro Display | 600 | 80px | 1.05 | -1.2px | `--text-hero-display` |
 
-## Tokens — Spacing & Shapes
+## Tokens Spacing & Shapes
 
 **Base unit:** 4px
 
